@@ -1,0 +1,10 @@
+**/a.out
+**/lib/*
+**/*.o
+**/*.d
+**/.obj/
+ex00/simple_polymorphism
+ex01/brain
+ex02/no_more_animals
+ex03/interfaces
+.vscode/settings.json
