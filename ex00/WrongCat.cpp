@@ -1,44 +1,44 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Cat.cpp                                         :+:      :+:    :+:   */
+/*   WrongCat.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ppontet <ppontet@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/13 15:36:35 by ppontet           #+#    #+#             */
-/*   Updated: 2025/03/13 15:58:19 by ppontet          ###   ########lyon.fr   */
+/*   Updated: 2025/03/13 16:24:57 by ppontet          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Cat.hpp"
+#include "WrongCat.hpp"
 
-Cat::Cat()
+WrongCat::WrongCat()
 {
-	this->type = "Cat";
+	this->type = "WrongCat";
 }
 
-Cat::~Cat()
+WrongCat::~WrongCat()
 {
 	;
 }
 
-Cat::Cat(const Cat &f)
+WrongCat::WrongCat(const WrongCat &f)
 {
 	*this = f;
 }
 
-Cat &Cat::operator=(const Cat &other)
+WrongCat &WrongCat::operator=(const WrongCat &other)
 {
 	this->type = other.type;
 	return (*this);
 }
 
-const std::string Cat::getType() const
+const std::string WrongCat::getType() const
 {
 	return (this->type);
 }
 
-void Cat::makeSound() const
+void WrongCat::makeSound() const
 {
-	std::cout << "Cat goes \"Miaoow Meooew\"" << std::endl;
+	std::cout << "WrongCat goes \"bip bip Miaoow Meooew\"" << std::endl;
 }

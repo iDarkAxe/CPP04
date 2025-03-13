@@ -29,15 +29,19 @@ P_INC = ./
 # Headers
 INC = \
 	Animal.hpp \
-	Dog.hpp \
 	Cat.hpp \
+	WrongAnimal.hpp \
+	WrongCat.hpp \
+	Dog.hpp \
 
 # Source files
 SRC = \
 	main.cpp \
 	Animal.cpp \
-	Dog.cpp \
 	Cat.cpp \
+	WrongAnimal.cpp \
+	WrongCat.cpp \
+	Dog.cpp \
 
 LIBS = \
 

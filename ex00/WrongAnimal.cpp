@@ -1,44 +1,44 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Cat.cpp                                         :+:      :+:    :+:   */
+/*   WrongAnimal.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ppontet <ppontet@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/13 15:36:35 by ppontet           #+#    #+#             */
-/*   Updated: 2025/03/13 15:58:19 by ppontet          ###   ########lyon.fr   */
+/*   Updated: 2025/03/13 16:25:25 by ppontet          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Cat.hpp"
+#include "WrongAnimal.hpp"
 
-Cat::Cat()
+WrongAnimal::WrongAnimal()
 {
-	this->type = "Cat";
+	this->type = "default";
 }
 
-Cat::~Cat()
+WrongAnimal::~WrongAnimal()
 {
 	;
 }
 
-Cat::Cat(const Cat &f)
+WrongAnimal::WrongAnimal(const WrongAnimal &f)
 {
 	*this = f;
 }
 
-Cat &Cat::operator=(const Cat &other)
+WrongAnimal &WrongAnimal::operator=(const WrongAnimal &other)
 {
 	this->type = other.type;
 	return (*this);
 }
 
-const std::string Cat::getType() const
+const std::string WrongAnimal::getType() const
 {
 	return (this->type);
 }
 
-void Cat::makeSound() const
+void WrongAnimal::makeSound() const
 {
-	std::cout << "Cat goes \"Miaoow Meooew\"" << std::endl;
+	std::cout << "WrongAnimal doesn't make sounds" << std::endl;
 }
