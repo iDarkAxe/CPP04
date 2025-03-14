@@ -9,7 +9,7 @@ NAME = brain
 # Debugging flags
 CFLAGS_DEBUG = -Wall -Wextra -g3 -D DEBUG=1 -std=c++98
 CC_DEBUG = clang++
-CC_DEBUG_CFLAGS = -std=c++98 -g3 -D DEBUG=1 -Weverything -Wno-padded -pedantic -O2 -Wwrite-strings -Wconversion -fsanitize=address -fsanitize=leak
+CC_DEBUG_CFLAGS = -std=c++98 -g3 -D DEBUG=1 -Weverything -Wno-padded -pedantic -O2 -Wwrite-strings -Wconversion -fsanitize=address -fsanitize=leak  -Wno-suggest-override -Wno-suggest-destructor-override
 #############################################################################################
 #                                                                                           #
 #                                         DIRECTORIES                                       #

@@ -6,7 +6,7 @@
 /*   By: ppontet <ppontet@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/13 15:31:42 by ppontet           #+#    #+#             */
-/*   Updated: 2025/03/14 11:23:46 by ppontet          ###   ########lyon.fr   */
+/*   Updated: 2025/03/14 12:43:13 by ppontet          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@
 #include <iostream>
 
 #define NUMBER_OF_ANIMALS 100
-#define NUMBER_OF_DOG NUMBER_OF_ANIMALS / 2
-#define NUMBER_OF_CAT NUMBER_OF_ANIMALS / 2
 
 int main()
 {
