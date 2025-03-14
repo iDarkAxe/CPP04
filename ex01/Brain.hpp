@@ -4,6 +4,9 @@
 #include <iostream>
 
 #define NBR_IDEAS 100
+#ifndef DEBUG
+# define DEBUG 0
+#endif 
 
 class Brain
 {

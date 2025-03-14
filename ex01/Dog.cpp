@@ -6,7 +6,7 @@
 /*   By: ppontet <ppontet@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/13 16:09:36 by ppontet           #+#    #+#             */
-/*   Updated: 2025/03/13 18:03:16 by ppontet          ###   ########lyon.fr   */
+/*   Updated: 2025/03/14 11:28:56 by ppontet          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,20 @@
 
 Dog::Dog()
 {
+	// std::cout << "Dog Default Constructor" << std::endl;
 	this->type = "Dog";
 	this->_brain = new Brain();
 }
 
 Dog::~Dog()
 {
+	std::cout << "Dog Default Destructor" << std::endl;
 	delete this->_brain;
 }
 
 Dog::Dog(const Dog &f)
 {
+	// std::cout << "Dog Copy Constructor" << std::endl;
 	*this = f;
 }
 

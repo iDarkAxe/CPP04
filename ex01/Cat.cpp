@@ -15,16 +15,19 @@
 Cat::Cat()
 {
 	this->type = "Cat";
+	std::cout << "Cat Default Constructor" << std::endl;
 	this->_brain = new Brain();
 }
 
 Cat::~Cat()
 {
+	std::cout << "Cat Default Destructor" << std::endl;
 	delete this->_brain;
 }
 
 Cat::Cat(const Cat &f)
 {
+	// std::cout << "Cat Copy Constructor" << std::endl;
 	*this = f;
 }
 

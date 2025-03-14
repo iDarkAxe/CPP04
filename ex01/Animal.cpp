@@ -6,7 +6,7 @@
 /*   By: ppontet <ppontet@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/13 15:36:35 by ppontet           #+#    #+#             */
-/*   Updated: 2025/03/13 17:23:04 by ppontet          ###   ########lyon.fr   */
+/*   Updated: 2025/03/14 11:26:51 by ppontet          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ Animal::Animal()
 
 Animal::~Animal()
 {
+	std::cout << "Animal Default Destructor" << std::endl;
 	;
 }
 

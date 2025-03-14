@@ -6,7 +6,7 @@
 /*   By: ppontet <ppontet@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/13 15:36:35 by ppontet           #+#    #+#             */
-/*   Updated: 2025/03/13 18:04:03 by ppontet          ###   ########lyon.fr   */
+/*   Updated: 2025/03/14 11:23:56 by ppontet          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,17 @@
 
 Brain::Brain()
 {
+	// std::cout << "Brain Default Constructor" << std::endl;
 }
 
 Brain::~Brain()
 {
-	;
+	std::cout << "Brain Default Destructor" << std::endl;
 }
 
 Brain::Brain(const Brain &f)
 {
+	// std::cout << "Brain Copy Constructor" << std::endl;
 	*this = f;
 }
 
@@ -33,7 +35,8 @@ Brain &Brain::operator=(const Brain &other)
 	{
 		this->ideas[i] = other.ideas[i];
 		// To verify that it's a DEEP COPY, addresses should differ
-		// std::cout << "addr is " << &this->ideas[i] << " and addr is " << &other.ideas[i] << std::endl;
+		if (DEBUG == 1)
+			std::cout << "addr is " << &this->ideas[i] << " and addr is " << &other.ideas[i] << std::endl;
 	}
 	return (*this);
 }
@@ -60,16 +63,7 @@ void Brain::talk() const
 			break;
 		std::cout << this->ideas[i] << std::endl;
 		// To verify that it's a DEEP COPY, addresses should differ
-		std::cout << "addr is " << &this->ideas[i] << std::endl;
+		if (DEBUG == 1)
+			std::cout << "addr is " << &this->ideas[i] << std::endl;
 	}
 }
-
-// private:
-// 	std::string ideas[100];
-// 	Brain *_brain;
-
-// public:
-// 	Brain();
-// 	~Brain();
-// 	Brain(const Brain &f);
-// 	Brain &operator=(const Brain &other);
