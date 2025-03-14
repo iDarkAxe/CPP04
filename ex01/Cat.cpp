@@ -15,7 +15,7 @@
 Cat::Cat()
 {
 	this->type = "Cat";
-	std::cout << "Cat Default Constructor" << std::endl;
+	// std::cout << "Cat Default Constructor" << std::endl;
 	this->_brain = new Brain();
 }
 
