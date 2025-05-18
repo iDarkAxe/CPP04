@@ -6,7 +6,7 @@
 /*   By: ppontet <ppontet@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/13 15:36:35 by ppontet           #+#    #+#             */
-/*   Updated: 2025/03/14 11:23:56 by ppontet          ###   ########lyon.fr   */
+/*   Updated: 2025/05/18 11:07:40 by ppontet          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ void Brain::think()
 	std::cout << "Brain is thinking :" << std::endl;
 	for (int i = 0; i < __INT_MAX__; i++)
 	{
-		if (!getline(std::cin, str) || str.empty())
+		if (!getline(std::cin, str) || !std::cin.good() || str.empty())
 			break;
 		this->ideas[i % NBR_IDEAS] = str;
 	}
