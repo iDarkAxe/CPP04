@@ -6,7 +6,7 @@
 /*   By: ppontet <ppontet@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/13 15:31:42 by ppontet           #+#    #+#             */
-/*   Updated: 2025/03/14 13:54:27 by ppontet          ###   ########lyon.fr   */
+/*   Updated: 2025/06/11 17:06:56 by ppontet          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,12 @@
 
 int main()
 {
-	// IMateriaSource* src = new MateriaSource();
-	// src->learnMateria(new Ice());
+	IMateriaSource* src = new MateriaSource();
+	src->learnMateria(new Ice());
 	// src->learnMateria(new Cure());
 	// ICharacter* me = new Character("me");
 	AMateria* tmp;
-	
+	(void)tmp;
 	// tmp = src->createMateria("ice");
 	// me->equip(tmp);
 	// tmp = src->createMateria("cure");
@@ -40,6 +40,6 @@ int main()
 	
 	// delete bob;
 	// delete me;
-	// delete src;
+	delete src;
 	return 0;
 }

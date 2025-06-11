@@ -19,7 +19,7 @@ class Cure : public AMateria
 		// 	// [...]
 
 		// 	std::string const & getType() const; //Returns the materia type
-		// 	virtual AMateria* clone() const = 0;
+		Cure* clone() const;
 		// 	virtual void use(ICharacter& target);
 };
 

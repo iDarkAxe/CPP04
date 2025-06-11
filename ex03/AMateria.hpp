@@ -16,6 +16,8 @@ class AMateria
 	public:
 		virtual ~AMateria(void);
 		AMateria(std::string const & type);
+		AMateria(const AMateria &f);
+		AMateria &operator=(const AMateria &other);
 		// [...]
 
 		std::string const & getType() const; //Returns the materia type

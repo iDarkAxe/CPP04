@@ -6,7 +6,7 @@
 /*   By: ppontet <ppontet@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/13 15:36:35 by ppontet           #+#    #+#             */
-/*   Updated: 2025/03/14 13:39:00 by ppontet          ###   ########lyon.fr   */
+/*   Updated: 2025/06/11 16:12:26 by ppontet          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,17 @@
 
 AMateria::AMateria()
 {
-	this->type = "default";
+	this->_type = "default";
 }
 
 AMateria::~AMateria()
 {
 	// std::cout << "AMateria Default Destructor" << std::endl;
+}
+
+AMateria::AMateria(std::string const & type)
+{
+	this->_type = type;
 }
 
 AMateria::AMateria(const AMateria &f)
@@ -29,16 +34,22 @@ AMateria::AMateria(const AMateria &f)
 
 AMateria &AMateria::operator=(const AMateria &other)
 {
-	this->type = other.type;
+	this->_type = other._type;
 	return (*this);
 }
 
-const std::string AMateria::getType() const
+const std::string &AMateria::getType() const
 {
-	return (this->type);
+	return (this->_type);
 }
 
-void AMateria::makeSound() const
+void AMateria::use(ICharacter& target)
 {
-	std::cout << "AMateria doesn't make sounds" << std::endl;
+	std::cout << "* AMateria used on " << target.getName() << " *" << std::endl;
 }
+
+
+// void AMateria::makeSound() const
+// {
+// 	std::cout << "AMateria doesn't make sounds" << std::endl;
+// }

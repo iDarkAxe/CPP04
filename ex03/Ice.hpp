@@ -6,11 +6,10 @@
 
 class Ice : public AMateria
 {
-	// private:
-	// 	AMateria(void);
+	private:
 
 	// protected:
-	// 	// [...]
+	// [...]
 
 	public:
 		Ice();
@@ -19,7 +18,7 @@ class Ice : public AMateria
 		// 	// [...]
 
 		// 	std::string const & getType() const; //Returns the materia type
-		// 	virtual AMateria* clone() const = 0;
+		Ice* clone() const;
 		// 	virtual void use(ICharacter& target);
 };
 

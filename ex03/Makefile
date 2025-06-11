@@ -1,15 +1,15 @@
 .PHONY : all clean fclean re bonus clean-lib clean-bin clean-obj debug debug-cc debug-print
 CC = clang++ 
-CFLAGS = -W -Wall -Werror
+CFLAGS = -Wall -Wextra -Werror -std=c++98
 DEPENDANCIES = -MMD -MP
 NO_DIR = --no-print-directory
 MAKE := $(MAKE) -j $(NO_DIR)
 NAME = interfaces
 
 # Debugging flags
-CFLAGS_DEBUG = -Wall -Wextra -g3 -D DEBUG=1 -std=c++98
+CFLAGS_DEBUG = -Wall -Wextra -g3 -std=c++98
 CC_DEBUG = clang++
-CC_DEBUG_CFLAGS = -std=c++98 -g3 -D DEBUG=1 -Weverything -Wno-padded -pedantic -O2 -Wwrite-strings -Wconversion -fsanitize=address -fsanitize=leak -Wno-suggest-override -Wno-suggest-destructor-override
+CC_DEBUG_CFLAGS = -std=c++98 -g3 -Weverything -Wno-padded -pedantic -O2 -Wwrite-strings -Wconversion -fsanitize=address -fsanitize=leak -Wno-suggest-override -Wno-suggest-destructor-override
 #############################################################################################
 #                                                                                           #
 #                                         DIRECTORIES                                       #
@@ -37,6 +37,9 @@ INC = \
 SRC = \
 	main.cpp \
 	AMateria.cpp \
+	MateriaSource.cpp \
+	Ice.cpp \
+	Cure.cpp \
 
 LIBS = \
 
