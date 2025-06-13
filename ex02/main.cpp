@@ -6,7 +6,7 @@
 /*   By: ppontet <ppontet@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/13 15:31:42 by ppontet           #+#    #+#             */
-/*   Updated: 2025/05/18 11:11:39 by ppontet          ###   ########lyon.fr   */
+/*   Updated: 2025/06/13 22:50:55 by ppontet          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,6 @@ int main()
 		std::cout << "Animal[" << NUMBER_OF_ANIMALS - i - 1 << "] : ";
 		array[NUMBER_OF_ANIMALS - i - 1]->makeSound();
 	}
-
 	for (int i = 0; i < NUMBER_OF_ANIMALS; i++)
 		delete array[i];
 	return 0;
