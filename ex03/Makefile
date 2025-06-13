@@ -16,10 +16,10 @@ CC_DEBUG_CFLAGS = -std=c++98 -g3 -Weverything -Wno-padded -pedantic -O2 -Wwrite-
 #                                                                                           #
 #############################################################################################
 # Source directories
-P_SRC = ./
+P_SRC = src/
 P_OBJ = .obj/
 
-P_INC = ./
+P_INC = inc/
 
 #############################################################################################
 #                                                                                           #
@@ -29,9 +29,12 @@ P_INC = ./
 # Headers
 INC = \
 	AMateria.hpp \
+	Ice.hpp \
+	Cure.hpp \
 	Character.hpp \
 	ICharacter.hpp \
 	IMateriaSource.hpp \
+	Rules.hpp \
 
 # Source files
 SRC = \
@@ -40,6 +43,8 @@ SRC = \
 	MateriaSource.cpp \
 	Ice.cpp \
 	Cure.cpp \
+	Character.cpp \
+	MoreClasses.cpp \
 
 LIBS = \
 
@@ -49,7 +54,7 @@ LIBS = \
 #                                                                                           #
 #############################################################################################
 SRCS =	\
-	$(addprefix $(P_SRC), $(SRC)) 
+	$(addprefix $(P_SRC), $(SRC))
 
 # List of object files (redirect to P_OBJ)
 OBJS = $(subst $(P_SRC), $(P_OBJ), $(SRCS:.cpp=.o))

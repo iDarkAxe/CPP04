@@ -6,7 +6,7 @@
 /*   By: ppontet <ppontet@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/13 15:36:35 by ppontet           #+#    #+#             */
-/*   Updated: 2025/06/11 16:12:26 by ppontet          ###   ########lyon.fr   */
+/*   Updated: 2025/06/12 11:09:31 by ppontet          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,14 @@ AMateria &AMateria::operator=(const AMateria &other)
 	this->_type = other._type;
 	return (*this);
 }
+
+// AMateria* AMateria::clone() const
+// {
+// 	AMateria *element;
+	
+// 	element = new AMateria("not defined");
+// 	return (element);
+// }
 
 const std::string &AMateria::getType() const
 {

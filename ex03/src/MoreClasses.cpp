@@ -1,31 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Cure.cpp                                           :+:      :+:    :+:   */
+/*   MoreClasses.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ppontet <ppontet@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/13 15:36:35 by ppontet           #+#    #+#             */
-/*   Updated: 2025/06/11 16:57:17 by ppontet          ###   ########lyon.fr   */
+/*   Created: 2025/06/13 10:05:34 by ppontet           #+#    #+#             */
+/*   Updated: 2025/06/13 10:17:27 by ppontet          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Cure.hpp"
+#include "AMateria.hpp"
+#include "Rules.hpp"
 
-Cure::Cure() : AMateria("Cure")
+# if MORE_CLASSES == 1
+Earth* Earth::clone() const
 {
-	;
-}
-
-Cure::~Cure()
-{
-	// std::cout << "Cure Default Destructor" << std::endl;
-}
-
-Cure* Cure::clone() const
-{
-	Cure *element;
+	Earth *element;
 	
-	element = new Cure();
+	element = new Earth();
 	return (element);
 }
+
+Fire* Fire::clone() const
+{
+	Fire *element;
+	
+	element = new Fire();
+	return (element);
+}
+#endif
