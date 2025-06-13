@@ -6,7 +6,7 @@
 /*   By: ppontet <ppontet@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/13 15:36:35 by ppontet           #+#    #+#             */
-/*   Updated: 2025/06/13 09:32:33 by ppontet          ###   ########lyon.fr   */
+/*   Updated: 2025/06/13 22:38:10 by ppontet          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 Cure::Cure() : AMateria("cure")
 {
-	;
 }
 
 Cure::~Cure()
@@ -28,4 +27,9 @@ Cure* Cure::clone() const
 	
 	element = new Cure();
 	return (element);
+}
+
+void Cure::use(ICharacter& target)
+{
+	std::cout << "* heals " << target.getName() << "’s wounds *" << std::endl;
 }

@@ -6,7 +6,7 @@
 /*   By: ppontet <ppontet@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/13 15:36:35 by ppontet           #+#    #+#             */
-/*   Updated: 2025/06/11 16:52:17 by ppontet          ###   ########lyon.fr   */
+/*   Updated: 2025/06/13 22:41:27 by ppontet          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,10 @@
 
 Ice::Ice() : AMateria("ice")
 {
-	;
 }
 
 Ice::~Ice()
 {
-	// std::cout << "Ice Default Destructor" << std::endl;
 }
 
 Ice* Ice::clone() const
@@ -28,4 +26,9 @@ Ice* Ice::clone() const
 	
 	element = new Ice();
 	return (element);
+}
+
+void Ice::use(ICharacter& target)
+{
+	std::cout << "* shoots an ice bolt at " << target.getName() << " *" << std::endl;
 }

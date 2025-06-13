@@ -6,21 +6,13 @@
 
 class Cure : public AMateria
 {
-	// private:
-	// 	AMateria(void);
-
-	// protected:
-	// 	// [...]
-
 	public:
 		Cure();
 		~Cure();
-		// 	AMateria(std::string const & type);
-		// 	// [...]
 
 		// 	std::string const & getType() const; //Returns the materia type
 		Cure* clone() const;
-		// 	virtual void use(ICharacter& target);
+		void use(ICharacter& target);
 };
 
 #endif

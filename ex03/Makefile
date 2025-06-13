@@ -9,7 +9,7 @@ NAME = interfaces
 # Debugging flags
 CFLAGS_DEBUG = -Wall -Wextra -g3 -std=c++98
 CC_DEBUG = clang++
-CC_DEBUG_CFLAGS = -std=c++98 -g3 -Weverything -Wno-padded -pedantic -O2 -Wwrite-strings -Wconversion -fsanitize=address -fsanitize=leak -Wno-suggest-override -Wno-suggest-destructor-override
+CC_DEBUG_CFLAGS = -std=c++98 -g3 -Weverything -Wno-padded -pedantic -O2 -Wwrite-strings -Wconversion -fsanitize=address -fsanitize=leak -Wno-suggest-override -Wno-suggest-destructor-override -Wno-weak-vtables
 #############################################################################################
 #                                                                                           #
 #                                         DIRECTORIES                                       #
@@ -29,21 +29,22 @@ P_INC = inc/
 # Headers
 INC = \
 	AMateria.hpp \
-	Ice.hpp \
-	Cure.hpp \
 	Character.hpp \
+	Cure.hpp \
+	Ice.hpp \
 	ICharacter.hpp \
 	IMateriaSource.hpp \
+	MateriaSource.hpp \
 	Rules.hpp \
 
 # Source files
 SRC = \
 	main.cpp \
 	AMateria.cpp \
-	MateriaSource.cpp \
-	Ice.cpp \
-	Cure.cpp \
 	Character.cpp \
+	Cure.cpp \
+	Ice.cpp \
+	MateriaSource.cpp \
 	MoreClasses.cpp \
 
 LIBS = \
