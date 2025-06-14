@@ -12,6 +12,7 @@
 
 #include "Character.hpp"
 #include "Rules.hpp"
+#include <iostream>
 
 Character::Character()
 {

@@ -6,7 +6,7 @@
 /*   By: ppontet <ppontet@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/13 15:31:42 by ppontet           #+#    #+#             */
-/*   Updated: 2025/06/13 22:46:55 by ppontet          ###   ########lyon.fr   */
+/*   Updated: 2025/06/14 13:57:18 by ppontet          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,11 @@
 #include "Rules.hpp"
 
 #include <iostream>
+
+#if MORE_CLASSES == 1
+# include "Earth.hpp"
+# include "Fire.hpp"
+#endif
 
 # if MORE_CLASSES == 0
 int main()

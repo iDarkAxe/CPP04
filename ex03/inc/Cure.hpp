@@ -1,17 +1,18 @@
 #ifndef CURE_HPP
 # define CURE_HPP
 
-#include <iostream>
 #include "AMateria.hpp"
 
 class Cure : public AMateria
 {
 	public:
 		Cure();
+		Cure(const Cure &f);
 		~Cure();
-
-		// 	std::string const & getType() const; //Returns the materia type
+		Cure &operator=(const Cure &other);
+		
 		Cure* clone() const;
+		std::string const & getType() const;
 		void use(ICharacter& target);
 };
 

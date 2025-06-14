@@ -36,6 +36,8 @@ INC = \
 	IMateriaSource.hpp \
 	MateriaSource.hpp \
 	Rules.hpp \
+	Fire.hpp \
+	Earth.hpp \
 
 # Source files
 SRC = \
@@ -45,7 +47,8 @@ SRC = \
 	Cure.cpp \
 	Ice.cpp \
 	MateriaSource.cpp \
-	MoreClasses.cpp \
+	Fire.cpp \
+	Earth.cpp \
 
 LIBS = \
 

@@ -1,7 +1,6 @@
 #ifndef ICE_HPP
 # define ICE_HPP
 
-#include <iostream>
 #include "AMateria.hpp"
 
 class Ice : public AMateria
@@ -9,9 +8,11 @@ class Ice : public AMateria
 	public:
 		Ice();
 		~Ice();
-
-		// 	std::string const & getType() const; //Returns the materia type
+		Ice(const Ice &other);
+		Ice &operator=(const Ice &other);
+		
 		Ice* clone() const;
+		std::string const & getType() const;
 		void use(ICharacter& target);
 };
 

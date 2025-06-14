@@ -6,13 +6,14 @@
 /*   By: ppontet <ppontet@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/13 15:36:35 by ppontet           #+#    #+#             */
-/*   Updated: 2025/06/13 10:20:25 by ppontet          ###   ########lyon.fr   */
+/*   Updated: 2025/06/14 14:20:38 by ppontet          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "MateriaSource.hpp"
 #include "Rules.hpp"
 #include <cstddef>
+#include <iostream>
 
 MateriaSource::MateriaSource()
 {
